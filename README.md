@@ -70,6 +70,23 @@ Commands and responses are simple text tokens. See `Protocol.java` for full cons
 4. **Read** server replies and display them.  
 5. On `CLOSE`, exit.
 
+## GUI Client (JavaFX)
+
+A JavaFX application (`ClientGUI.java`) provides:
+- **Login Screen**: username/password prompt
+- **Dashboard**:
+  - **TableView** of products (ID, name, price, quantity)
+  - **Buttons**:
+    - Refresh list
+    - Purchase selected
+    - Return selected
+  - **Add-Product Form**: fields for ID, name, price, quantity + Add button
+  - **Logout** button
+
+All network I/O is done on background `Task`s to keep the UI responsive.  
+Launch with JavaFX modules on the module-path; see “Build & Run” above.
+
+
 ---
 
 ## How to Build & Run
