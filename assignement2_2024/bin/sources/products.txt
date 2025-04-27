@@ -1,0 +1,5 @@
+p1;mela;1.00;10
+p2;pera;1.20;10
+p3;banana;2.00;5
+p4;melanzana;1.50;5
+p5;pomodoro;2.00;5
