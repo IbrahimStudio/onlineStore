@@ -2,6 +2,7 @@ package model;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
+import java.util.Locale;
 
 /**
  * Represents a product with an identifier, name, price, and available stock quantity.
@@ -82,6 +83,6 @@ public class Product {
     @Override
     public String toString() {
         // id;name;price;quantity
-        return String.format("%s;%s;%.2f;%d", id, name, price, getQuantity());
+        return String.format(Locale.US, "%s;%s;%.2f;%d", id, name, price, getQuantity());
     }
 }
